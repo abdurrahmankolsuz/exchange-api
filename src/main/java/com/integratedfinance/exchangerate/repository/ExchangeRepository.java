@@ -7,7 +7,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface ExchangeRepository extends JpaRepository<ExchangeConversion, Long> {
-  ExchangeConversion findById(long id);
 
-  List<ExchangeConversion> findByConversionDate(LocalDate date);
+    ExchangeConversion findById(long id);
+
+    List<ExchangeConversion> findByConversionDate(LocalDate date);
 }

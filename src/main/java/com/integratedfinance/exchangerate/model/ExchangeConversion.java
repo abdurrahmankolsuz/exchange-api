@@ -14,7 +14,8 @@ import java.time.LocalDate;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter @Setter
+@Getter
+@Setter
 @Entity
 @Table(name = "exchange_conversion")
 public class ExchangeConversion {
@@ -38,5 +39,5 @@ public class ExchangeConversion {
     @Column(name = "amount")
     private BigDecimal amount;
 
-    
+
 }

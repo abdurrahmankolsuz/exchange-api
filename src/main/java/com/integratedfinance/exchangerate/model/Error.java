@@ -6,11 +6,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@NoArgsConstructor @Getter @Setter
+@NoArgsConstructor
+@Getter
+@Setter
 public class Error {
-	
-	private String code;
-	private String type;
-	private String info;
-	
+
+    private String code;
+    private String type;
+    private String info;
+
 }

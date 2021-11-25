@@ -7,12 +7,12 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @NoArgsConstructor
-@Setter @Getter
+@Setter
+@Getter
 public class ConversionResponse {
-	
-	private BigDecimal convertedValue;
-	private Long transactionId;
-	private Error error;
 
-	
+    private BigDecimal convertedValue;
+    private Long transactionId;
+    private Error error;
+
 }

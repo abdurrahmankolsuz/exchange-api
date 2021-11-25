@@ -7,11 +7,11 @@ import lombok.Setter;
 import java.util.Arrays;
 import java.util.List;
 
-@Getter @Setter
+@Getter
+@Setter
 public class ExchangeRateRequest {
 
     private Currency srcCurrency;
-
     private Currency tgtCurrency;
 
     public List<Currency> getSupportedCurrencies() {

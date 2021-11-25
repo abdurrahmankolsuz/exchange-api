@@ -8,9 +8,8 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 public class ExchangeRateResponse {
-	
-	private BigDecimal targetRate;
-	private Error error;
 
-	
+    private BigDecimal targetRate;
+    private Error error;
+
 }

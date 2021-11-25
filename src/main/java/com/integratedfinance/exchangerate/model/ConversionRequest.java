@@ -10,15 +10,13 @@ import java.util.Arrays;
 import java.util.List;
 
 @NoArgsConstructor
-@Getter @Setter
+@Getter
+@Setter
 public class ConversionRequest {
 
     private Currency srcCurrency;
-
     private Currency tgtCurrency;
-
     private BigDecimal srcAmount;
-
 
     public List<Currency> getSupportedCurrencies() {
         return Arrays.asList(Currency.values());
