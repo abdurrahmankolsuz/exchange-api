@@ -54,7 +54,7 @@ public class ExchangeController {
 
 
     @DeleteMapping("/exchange/{id}")
-    public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") long id) {
+    public ResponseEntity<HttpStatus> deleteExchange(@PathVariable("id") long id) {
         try {
             exchangeRepository.deleteById(id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -64,7 +64,7 @@ public class ExchangeController {
     }
 
     @DeleteMapping("/exchange")
-    public ResponseEntity<HttpStatus> deleteAllTutorials() {
+    public ResponseEntity<HttpStatus> deleteAllExchanges() {
         try {
             exchangeRepository.deleteAll();
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
